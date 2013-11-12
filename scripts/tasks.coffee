@@ -40,8 +40,8 @@ class Tasks
 module.exports = (robot) ->
   tasks = new Tasks robot
 
-  robot.respond /(やる) (.+?)$/i, (msg) ->
-    task = tasks.add msg.match[2]
+  robot.respond /(やる)(　| )(.+?)$/i, (msg) ->
+    task = tasks.add msg.match[3]
     msg.send "おしごと追加しましたー: ##{task.num} - #{task.task}"
 
   robot.respond /(やること)/i, (msg) ->
@@ -53,7 +53,7 @@ module.exports = (robot) ->
     else
       msg.send "There are no tasks"
 
-  robot.respond /(やった) #?(\d+)/i, (msg) ->
-    taskNum = msg.match[2]
+  robot.respond /(やった)(　| )#?(\d+)/i, (msg) ->
+    taskNum = msg.match[3]
     task = tasks.deleteByNumber taskNum
     msg.send "おつかれさまです！: ##{task.num} - #{task.task}"
