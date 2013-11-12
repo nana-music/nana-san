@@ -7,13 +7,23 @@ and [nana music, inc](http://nana-music.com/) uses settings. She's pretty cute ;
 
 Japanese. 
 
-## tasks
+## tasks.coffee
 
 |command           |detail             |
 |:-----------------|------------------:|
 |やる [タスク内容]  |やることを追加します|
 |やること           |やることのリストを表示します|
 |やった [タスク番号]|やることで表示されたタスクの番号をけします|
+
+
+## plusplus.coffee
+
+|command           |detail                |
+|:-----------------|---------------------:|
+|<name>++          |ユーザーにポイントを与えます|
+|<name>--          |ユーザーにポイントを下げます|
+|score <name>      |ユーザーのスコアを見ます|
+|top <number>        |ユーザーのランキングを表示します|
 
 This version is designed to be deployed on [Heroku][heroku]. This README was generated for you by hubot to help get you started. Definitely update and improve to talk about your own instance, how to use and deploy, what functionality he has, etc!
 
