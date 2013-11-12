@@ -1,1 +1,3 @@
-["redis-brain.coffee", "shipit.coffee"]
+["tasks.coffee",
+ "redis-brain.coffee",
+ "shipit.coffee"]
